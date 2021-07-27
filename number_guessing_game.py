@@ -11,7 +11,8 @@ play = True                   # Sets the play state of the game
 # Clears the terminal screen
 def clear():
     if 'idlelib' in sys.modules:
-        # Do nothing      
+        # Do nothing
+        return
     elif name == 'nt':            # For Windows
         _ = system('cls')
     else:                       # For MacOS, Linux
