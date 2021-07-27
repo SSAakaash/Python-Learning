@@ -10,7 +10,7 @@ A game I created using my limited knowledge in python. Hope you enjoy it.
 
 OR
 
-1. Open a terminal window (or command prompt if you are in Windows) and type the following.
+1. Open a terminal window (or command prompt if you are in Windows) and type the following (or copy-paste).
 ```
 git clone https://github.com/SSAakaash/Python-Learning.git
 cd Python-Learning
