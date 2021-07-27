@@ -13,7 +13,7 @@ def clear():
     if 'idlelib' in sys.modules:
         # Hacky way to clear screen in IDLE by printing 25 new lines.
         print("\n" * 25)       
-    if name == 'nt':            # For Windows
+    elif name == 'nt':            # For Windows
         _ = system('cls')
     else:                       # For MacOS, Linux
         _ = system('clear')
