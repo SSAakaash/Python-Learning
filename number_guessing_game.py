@@ -11,8 +11,7 @@ play = True                   # Sets the play state of the game
 # Clears the terminal screen
 def clear():
     if 'idlelib' in sys.modules:
-        # Hacky way to clear screen in IDLE by printing 25 new lines.
-        print("\n" * 25)       
+        # Do nothing      
     elif name == 'nt':            # For Windows
         _ = system('cls')
     else:                       # For MacOS, Linux
