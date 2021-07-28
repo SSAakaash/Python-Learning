@@ -11,8 +11,8 @@ play = True                   # Sets the play state of the game
 # Clears the terminal screen
 def clear():
     if 'idlelib' in sys.modules:
-        # Do nothing
-        return
+        # Do not clear screen when running in IDLE
+        pass
     elif name == 'nt':            # For Windows
         _ = system('cls')
     else:                       # For MacOS, Linux
@@ -36,6 +36,7 @@ def playAgain():
     val = input("Do you want to play again? (y/n): ").strip().lower()
     if val == 'y' or val == 'yes':
         clear()                 # Clears screen if yes
+        print("\nIf you want to quit, enter 'quit'.")
         return True
     else:
         return False
